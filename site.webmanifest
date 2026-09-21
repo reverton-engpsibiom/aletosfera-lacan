@@ -1,0 +1,29 @@
+{
+ "name": "Aletosfera: discursos e estados do inconsciente",
+ "short_name": "Aletosfera",
+ "description": "Estude Lacan girando os quatro discursos: seis estados do inconsciente, 31 vinhetas clínicas, glossário, quiz e cruzadas. Baseado no texto de Regina Moran.",
+ "lang": "pt-BR",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#F1F3F9",
+ "theme_color": "#5B45C8",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
