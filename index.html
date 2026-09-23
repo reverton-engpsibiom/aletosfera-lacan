@@ -452,7 +452,7 @@ const ST = {
     analista:'O analista, como {a} no agente, recolhe na verdade o enigma causal ({S1}) e interroga o gozo dessa ocupação imaginária.',
     meta:'Destituir o agente simbólico {S2} — a parcela não castrada do Outro — para que o “Outro do Outro” deixe de existir. Devolve-se como produção o sujeito, passo a passo, na relação com as perdas.',
     cuidado:'É ineficaz que o analista proceda como no discurso da histérica.'},
-  av:{k:'av',tag:'M',sub:'a-v',short:'a-viciado',nome:'a-viciado',lema:'O inconsciente que se agarra ao objeto',
+  av:{k:'av',tag:'M',sub:'av',short:'a-viciado',nome:'a-viciado',lema:'O inconsciente que se agarra ao objeto',
     dn:['Inconsciente do a-viciado','Fala do a-viciado','Analista do a-viciado','Efeito do ato no a-viciado'],
     fonte:'Aurélio Souza, retomado por Moran',
     traco:'Angústia-letra, realização do simbólico. O objeto {a} é o agente irresistível; {S2} sustenta a alienação com sua bateria de significantes; produz-se {S1}: o nome “viciado”, neologismo do nome próprio. O giro, aqui, é lido no sentido horário.',
@@ -468,7 +468,7 @@ const ST = {
     analista:'{S1} no agente do analista, para ser rebaixado; o {a} na verdade: a ilusão de completude pode ser esvaziada.',
     meta:'Renúncia ao neologismo do nome próprio e perda de objetos; o real toma o lugar de agente — subjetivação na falta. A cada ciclo, um discurso menos feroz, menos selvagem.',
     cuidado:'A cada iteração, o poder do discurso capitalista revela sua verdade no que toca o singular do sujeito.'},
-  ja:{k:'ja',tag:'M',sub:'JA',short:'Realização do imaginário',nome:'Realização do imaginário (angústia-corpo)',lema:'O inconsciente do terror',
+  ja:{k:'ja',tag:'M',sub:'rimg',short:'Realização do imaginário',nome:'Realização do imaginário (angústia-corpo)',lema:'O inconsciente do terror',
     dn:['Inconsciente da angústia-corpo','Fala na angústia-corpo','Analista na angústia-corpo','Efeito do ato na angústia-corpo'],
     fonte:'Schejtman, lido por Moran',
     traco:'Angústia-corpo, terror, JA (gozo do Outro), “discurso da fenda”. Em relação à histérica há troca na diagonal principal e inversão na razão do outro. O objeto {a} age (oral, anal, genital, escópico, voz), ativa o imaginário (corpo) e produz o gozo do Outro {S2}.',
@@ -476,7 +476,7 @@ const ST = {
     analista:'{S2} como agente: suplência simbólica que desvela o gozo e denuncia o desejo invasivo do Outro.',
     meta:'Queda do objeto ou des-erotização, de modo iterativo; sujeito advertido (não todo): “penso e não sou”.',
     cuidado:'O cuidado clínico é feito em equipe; aqui o foco é a escuta analítica.'},
-  ir:{k:'ir',tag:'M',sub:'ir',short:'Imaginarização do real',nome:'Imaginarização do real (inibição)',lema:'O inconsciente da inibição do real',
+  ir:{k:'ir',tag:'M',sub:'imgr',short:'Imaginarização do real',nome:'Imaginarização do real (inibição)',lema:'O inconsciente da inibição do real',
     dn:['Inconsciente da inibição do real','Fala na inibição do real','Analista na inibição do real','Efeito do ato na inibição do real'],
     fonte:'Moran',
     traco:'Inibição como mau funcionamento do real (voz ou olhar). O mais-de-gozar passa ao trabalho; o imaginário age e produz o gozo do Outro: alucinação visual ou verbal, perversão. Uma só operação a partir do mestre.',
@@ -596,7 +596,7 @@ const QUIZ = [
  {id:'q1b',L:1,q:'Quais são os quatro lugares de cada matema?',o:['Agente, outro, verdade e produção','Sujeito, objeto, saber e mestre','Consciente, pré-consciente, inconsciente e real','Demanda, desejo, pulsão e gozo'],c:0,e:'Em cima: agente e outro (trabalho). Embaixo: verdade (preguiça) e produção (produto).'},
  {id:'q1c',L:1,q:'O que representa o símbolo $ (S barrado)?',o:['O sujeito dividido','O significante mestre','O saber','O objeto a'],c:0,e:'{$} é o sujeito dividido pela linguagem, efeito do significante.'},
  {id:'q1d',L:1,q:'S₂ representa…',o:['O saber (tesouro dos significantes)','O significante mestre','O sujeito','O mais-de-gozar'],c:0,e:'{S2} é o saber, o tesouro dos significantes. O mestre é {S1}.'},
- {id:'q1e',L:1,q:'Quantos estados (estruturas) do inconsciente o texto de Moran descreve?',o:['Seis','Quatro','Dois','Doze'],c:0,e:'Seis: histérica (M), obsessivo (M_obs), a-viciado (M_a-v), capitalista (M_cap), realização do imaginário (M_JA) e imaginarização do real (M_ir).'},
+ {id:'q1e',L:1,q:'Quantos estados (estruturas) do inconsciente o texto de Moran descreve?',o:['Seis','Quatro','Dois','Doze'],c:0,e:'Seis: histérica (M), obsessivo (M_obs), a-viciado (M_av), capitalista (M_cap), realização do imaginário (M_rimg) e imaginarização do real (M_imgr).'},
  {id:'q1f',L:1,q:'Em qual lugar está o sujeito nos seis discursos do inconsciente (os M)?',o:['Na verdade (preguiça)','No agente','No outro (trabalho)','Na produção'],c:0,e:'Axioma 1: o discurso que estrutura o inconsciente é qualquer discurso que traga o sujeito {$} como efeito — isto é, na verdade.'},
  {id:'q1g',L:1,q:'Complete o Discurso do Mestre (M): qual termo ocupa o lugar do agente?',m:{s:'hist',d:'M',hide:0},o:['S₁','S₂','$','a'],c:0,e:'No mestre, {S1} é o agente; {S2} o outro; {a} a produção; {$} a verdade.'},
  /* ---- 2 COMPREENDER ---- */
@@ -610,7 +610,7 @@ const QUIZ = [
  {id:'q3a',L:3,q:'No discurso H (fala da histérica), quem ocupa o lugar de agente?',m:{s:'hist',d:'H',hide:0},o:['$','S₁','S₂','a'],c:0,e:'Na histerização, o sujeito {$} toma o lugar de agente e interpela o mestre.'},
  {id:'q3b',L:3,q:'No discurso do analista (A, caso da histérica), quem está no lugar de agente?',m:{s:'hist',d:'A',hide:0},o:['a','S₁','S₂','$'],c:0,e:'O analista ocupa o lugar do objeto {a}, causa de desejo.'},
  {id:'q3c',L:3,q:'Em M_obs, S₂ é agente. Após um quarto de volta (H_obs), em que lugar estará S₂?',o:['Outro (trabalho)','Produção','Verdade','Continua agente'],c:0,e:'Regra do giro: agente → outro. {S2} passa ao trabalho na fala do analisando.'},
- {id:'q3d',L:3,q:'“Confiro o gás sete vezes. Tenho certeza de que fechei, mas se eu não conferir, algo ruim acontece com minha mãe.” Qual hipótese de estado é mais plausível?',o:['Obsessivo (M_obs)','Histérica (M)','Capitalista (M_cap)','Imaginarização do real (M_ir)'],c:0,e:'Certezas, ritual e mandato numérico são a marca do recalque no simbólico. Lembrando: é hipótese de trabalho, não rótulo.'},
+ {id:'q3d',L:3,q:'“Confiro o gás sete vezes. Tenho certeza de que fechei, mas se eu não conferir, algo ruim acontece com minha mãe.” Qual hipótese de estado é mais plausível?',o:['Obsessivo (M_obs)','Histérica (M)','Capitalista (M_cap)','Imaginarização do real (M_imgr)'],c:0,e:'Certezas, ritual e mandato numérico são a marca do recalque no simbólico. Lembrando: é hipótese de trabalho, não rótulo.'},
  {id:'q3e',L:3,q:'“Sou o viciado, todo mundo me chama assim. É só pra relaxar, todo mundo faz.” No estado a-viciado, o que são “viciado” e “é só pra relaxar”?',o:['S₁ (a nomeação) e S₂ (o álibi)','S₂ e $','a e S₁','$ e a'],c:0,e:'“Viciado” é a nomeação que faz as vezes de nome próprio ({S1}); o álibi é produzido pela bateria de significantes ({S2}).'},
  {id:'q3f',L:3,q:'Em M_cap, quem ocupa o lugar do outro (trabalho)?',m:{s:'cap',d:'M',hide:2},o:['a','S₁','S₂','$'],c:0,e:'No capitalista, os objetos {a} trabalham, destacando-se do real. {S2} é o agente; {S1}, a produção.'},
  /* ---- 4 ANALISAR ---- */
@@ -619,7 +619,7 @@ const QUIZ = [
  {id:'q4c',L:4,q:'Por que é ineficaz conduzir um obsessivo como se fosse histérico?',o:['O agente do inconsciente é outro (S₂ simbólico, não S₁) e a produção visada é castração e perda, não a decifração de um enigma','Porque obsessivo não fala','Porque analista não deve intervir','Porque não há giro no obsessivo'],c:0,e:'As estruturas diferem; o lugar do analista como agente muda de função conforme o estado.'},
  {id:'q4d',L:4,q:'Quantos discursos existem no total, combinando estados e giros?',o:['24 (6 estados × 4 giros)','12','6','4'],c:0,e:'Desses 24, seis já eram conhecidos (os 4 de Lacan, o a-viciado de A. Souza e o capitalista de Lacan) e 18 são novos.'},
  {id:'q4e',L:4,q:'O discurso M abaixo (a/$ → S₂/S₁) corresponde a qual estado?',m:{s:'av',d:'M',hide:-1},o:['a-viciado','Histérica','Obsessivo','Capitalista'],c:0,e:'Objeto {a} agente, {S2} no trabalho, {S1} na produção (o nome “viciado”).'},
- {id:'q4f',L:4,q:'Em quais dois estados o objeto a está no lugar de agente em M?',o:['a-viciado e realização do imaginário (JA)','Histérica e obsessivo','Capitalista e imaginarização do real','Apenas a-viciado'],c:0,e:'M_a-v e M_JA têm {a} agente. Diferem em quem trabalha: {S2} no a-viciado, {S1} (imaginário) no JA.'},
+ {id:'q4f',L:4,q:'Em quais dois estados o objeto a está no lugar de agente em M?',o:['a-viciado e realização do imaginário (JA)','Histérica e obsessivo','Capitalista e imaginarização do real','Apenas a-viciado'],c:0,e:'M_av e M_rimg têm {a} agente. Diferem em quem trabalha: {S2} no a-viciado, {S1} (imaginário) no JA.'},
  /* ---- 5 AVALIAR ---- */
  {id:'q5a',L:5,q:'Um colega diz: “ele é obsessivo, ponto final, e sempre será”. Como avaliar isso à luz do texto?',o:['Contraria a leitura estocástica: o estado pode mudar com os encontros; serve como hipótese de trabalho naquele momento, não como rótulo fixo','Está correto: o estado é fixo','Está errado, porque o obsessivo não existe','É irrelevante para a clínica'],c:0,e:'Schejtman e Moran mostram a pouca utilidade dos diagnósticos estáticos: dá-se dinâmica ao inconsciente.'},
  {id:'q5b',L:5,q:'Na sessão, o analisando passa de um lamento por falta a certezas repetitivas. Qual a melhor conduta?',o:['Reavaliar em que estado do inconsciente a fala está ancorada (regressão) antes de escolher a intervenção','Manter a mesma intervenção, pois o diagnóstico já foi feito','Interromper a sessão','Interpretar tudo como histeria'],c:0,e:'“Durante um atendimento o analista pode questionar qual lugar o sujeito ocupa em determinado momento da sessão.”'},
@@ -629,7 +629,7 @@ const QUIZ = [
  /* ---- 6 CRIAR (abertas, autoavaliação) ---- */
  {id:'q6a',L:6,open:true,q:'Escreva uma intervenção breve para um analisando obsessivo que diz: “Se eu não conferir sete vezes, algo ruim acontece à minha mãe.”',crit:['Não responde como mestre (não tranquiliza nem ordena).','Recolhe a certeza ou o enigma causal como verdade do sujeito.','Interroga o agente simbólico (quem manda? de onde vem o mandato?).','Visa uma perda (castração), não uma explicação.','Cabe numa frase, na posição do {a} (causa de desejo).'],e:'Modelo: “Sete… e quem foi que contou que seis não vale?” A frase devolve o mandato como enigma, sem tranquilizar.'},
  {id:'q6b',L:6,open:true,q:'Invente uma vinheta de 3–4 frases para o estado capitalista (M_cap), em que S₁ seja um neologismo do nome próprio.',crit:['Aparece um S₁ como nome próprio (ex.: “provedor”, “eficiente”).','Aparece a demanda de mais ou o lamento de perda (S₂ no trabalho).','O objeto trazido é insatisfatório (a na produção).','Fica claro onde o analista poderia esvaziar a ilusão de completude.'],e:'Exemplo: “Sou o provedor da casa. Fechei o contrato e já preciso de outro. Se perco um, quem sou?”'},
- {id:'q6c',L:6,open:true,q:'No Laboratório de Permutações, monte um estado e explique em duas frases o que muda na escuta em relação à histérica.',crit:['Identifica os lugares de S₁, S₂ e a.','Mantém $ na verdade (Axioma 1).','Diz qual é o agente do inconsciente nesse estado.','Relaciona a mudança ao lugar do analista.'],e:'Ex.: em M_ir, {S1} é agente e {a} trabalha; escuta-se relato do que se viu, e o analista busca o mestre a que a alucinação responde.'}
+ {id:'q6c',L:6,open:true,q:'No Laboratório de Permutações, monte um estado e explique em duas frases o que muda na escuta em relação à histérica.',crit:['Identifica os lugares de S₁, S₂ e a.','Mantém $ na verdade (Axioma 1).','Diz qual é o agente do inconsciente nesse estado.','Relaciona a mudança ao lugar do analista.'],e:'Ex.: em M_imgr, {S1} é agente e {a} trabalha; escuta-se relato do que se viu, e o analista busca o mestre a que a alucinação responde.'}
 ];
 
 const CARDS = [
@@ -655,16 +655,16 @@ const CARDS = [
  {f:'Ato analítico bem-sucedido',b:'O agente do estado do inconsciente é alvo da produção, pelo trabalho do sujeito: é deposto.',t:'Clínica'},
  {f:'Pergunta-guia da sessão',b:'“Em que lugar o sujeito está neste momento da sessão?” A intervenção só se autoriza após a regressão da fala ao estado do inconsciente.',t:'Clínica'},
  {f:'Analista no discurso da histérica',b:'Agente com o objeto a: o mais-de-gozar da produção inconsciente é tomado pelo avesso como desejo de analista.',t:'Clínica'},
- {f:'Álibi (a-viciado)',b:'S₂ na produção em H_a-v: justificativas. O analista o recebe na verdade (A) e o desconstrói.',t:'Clínica'},
- {f:'Passe de sentido',b:'Em M_ir/U_ir: o analista busca o significante mestre a que a alucinação responde; o passe de sentido simbólico ajuda a interromper o delírio.',t:'Clínica'},
+ {f:'Álibi (a-viciado)',b:'S₂ na produção em H_av: justificativas. O analista o recebe na verdade (A) e o desconstrói.',t:'Clínica'},
+ {f:'Passe de sentido',b:'Em M_imgr/U_imgr: o analista busca o significante mestre a que a alucinação responde; o passe de sentido simbólico ajuda a interromper o delírio.',t:'Clínica'},
  {f:'Aletosfera',b:'Esfera da verdade do sujeito. Seis M no polo norte; cada revolução é um meridiano (longitude).',t:'Estados'},
  {f:'Neologismo do nome próprio',b:'S₁ que faz as vezes de nome: “viciado”, “rico”, “provedor”, “anoréxico”… identificação rotular.',t:'Estados'},
  {f:'Que estado é este?',m:{s:'hist',d:'M',hide:-1},b:'Mestre / histérica. {S1} agente, {S2} outro, {a} produção.',t:'Matemas'},
  {f:'Que estado é este?',m:{s:'obs',d:'M',hide:-1},b:'Obsessivo (M_obs). {S2} agente; {S1} trabalha no imaginário; recalque no simbólico.',t:'Matemas'},
- {f:'Que estado é este?',m:{s:'av',d:'M',hide:-1},b:'a-viciado (M_a-v). O objeto {a} age; o nome “viciado” é produzido.',t:'Matemas'},
+ {f:'Que estado é este?',m:{s:'av',d:'M',hide:-1},b:'a-viciado (M_av). O objeto {a} age; o nome “viciado” é produzido.',t:'Matemas'},
  {f:'Que estado é este?',m:{s:'cap',d:'M',hide:-1},b:'Capitalista (M_cap). {S2} agente; os objetos {a} trabalham; {S1} produzido: ter.',t:'Matemas'},
- {f:'Que estado é este?',m:{s:'ja',d:'M',hide:-1},b:'Realização do imaginário (M_JA), angústia-corpo. O objeto {a} age e produz o gozo do Outro {S2}.',t:'Matemas'},
- {f:'Que estado é este?',m:{s:'ir',d:'M',hide:-1},b:'Imaginarização do real (M_ir), inibição. {S1} agente; o objeto {a} no real.',t:'Matemas'}
+ {f:'Que estado é este?',m:{s:'ja',d:'M',hide:-1},b:'Realização do imaginário (M_rimg), angústia-corpo. O objeto {a} age e produz o gozo do Outro {S2}.',t:'Matemas'},
+ {f:'Que estado é este?',m:{s:'ir',d:'M',hide:-1},b:'Imaginarização do real (M_imgr), inibição. {S1} agente; o objeto {a} no real.',t:'Matemas'}
 ];
 
 const GLOSS = [
@@ -672,13 +672,13 @@ const GLOSS = [
  ['Algoritmo da análise','Sequência de giros de quarto de volta nos discursos visando ao ato analítico e ao seu a posteriori; repetida ao longo das iterações da análise.'],
  ['Ato analítico','Operação do analista, no discurso do analista, que convoca o sujeito ao trabalho e busca depor o agente do estado do inconsciente.'],
  ['Automaton e tiquê','Rede de significantes (automatismo) e encontro contingente com o real. Juntas explicam a imprevisibilidade da repetição.'],
- ['Angústia-corpo','Nome, em Schejtman, da realização do imaginário: terror e gozo do Outro (M_JA).'],
+ ['Angústia-corpo','Nome, em Schejtman, da realização do imaginário: terror e gozo do Outro (M_rimg).'],
  ['Angústia-letra','Nome da realização do simbólico no a-viciado.'],
  ['Estado do inconsciente','Um dos seis arranjos de S₁, S₂ e a nos lugares agente, outro e produção, com o sujeito na verdade.'],
  ['Estocástico','Sujeito à contingência: o estado discursivo muda por mau encontro e repetição, em vez de ser estático.'],
  ['Giro de ¼ de volta','Operação de Lacan: cada termo avança um lugar (agente → outro → produção → verdade → agente).'],
  ['Gozo do Outro (JA)','Gozo que o sujeito sofre como vindo do Outro, produzido pela agência de um objeto (voz, olhar, oral, anal, genital).'],
- ['Imaginarização do real','Estado M_ir: inibição como mau funcionamento do real (voz ou olhar). Alucinação, delírio, perversão.'],
+ ['Imaginarização do real','Estado M_imgr: inibição como mau funcionamento do real (voz ou olhar). Alucinação, delírio, perversão.'],
  ['Impossibilidade','Relação entre agente e trabalho, característica dos discursos do inconsciente e do analista.'],
  ['Impotência','Relação entre produção e verdade, característica da fala do analisando e do efeito a posteriori do ato.'],
  ['Longitude / revolução','Cada estado do inconsciente e seus quatro discursos, imaginados como um meridiano da aletosfera.'],
@@ -697,7 +697,7 @@ const GLOSS = [
 const LAYERS = [
  ['I','Questionando o caráter estático do inconsciente','Cada escuta é singular; por isso a estrutura do inconsciente não pode ser tomada como estática nos discursos do processo analítico.','Para que o analisando histerize, {$} precisa tomar o lugar de agente e desafiar o enigma. Mas nem toda fala nem toda demanda acontece nessa estrutura, e a regressão da fala ao mestre depende de estarmos no discurso da histérica. A meta de qualquer análise — não só da histérica — é a alforria do trabalho escravo do inconsciente.','Em que momentos a fala do seu analisando não se deixa ler como histérica?'],
  ['II','Campo lacaniano: aletosfera','A aletosfera é a esfera da verdade do sujeito, lida como a esfera dos discursos.','O sujeito {$} permanece no lugar da verdade. Pergunta-se: como o lugar do agente, do outro e do produto varia conforme o arranjo de {S1}, {S2} e {a}? Lacan desenvolveu o algoritmo de um dos processos possíveis; a clínica pede outros.','Quais outros arranjos de lugares a clínica sugere além do da histérica?'],
- ['III','Seis possibilidades de estados do inconsciente','Seis estados: M, M_obs, M_a-v, M_cap, M_JA e M_ir, localizados no polo norte da aletosfera.','Em cada um o sujeito ocupa a verdade (“sou e não penso”). A leitura é estocástica: a contingência dos encontros (tiquê e automaton) muda o estado; diacronia e sincronia se duplicam no sujeito.','O que muda quando se pensa o estado como passageiro, e não como diagnóstico?'],
+ ['III','Seis possibilidades de estados do inconsciente','Seis estados: M, M_obs, M_av, M_cap, M_rimg e M_imgr, localizados no polo norte da aletosfera.','Em cada um o sujeito ocupa a verdade (“sou e não penso”). A leitura é estocástica: a contingência dos encontros (tiquê e automaton) muda o estado; diacronia e sincronia se duplicam no sujeito.','O que muda quando se pensa o estado como passageiro, e não como diagnóstico?'],
  ['IV','Algoritmo do processo de análise via discursos','Os quatro discursos M, H, A e U formam um conjunto fechado para o giro de quarto de volta.','No caso da histérica: o inconsciente (M), a fala (H), o analista (A) e o efeito do ato (U). A regressão parte da fala ao mestre; o ato opera no discurso do analista a separação.','Onde, na sua prática, você reconhece a regressão de H a M?'],
  ['V','Generalização do movimento do sujeito','O sujeito faz sempre o mesmo caminho: preguiça → agente → outro → produção.','Do lugar da preguiça (onde é e não pensa) desliza na fala ao agente; é convocado pelo analista ao trabalho; e, após o ato, ocupa a produção. Esse trajeto é invariante nas seis estruturas.','Em que momento da sessão você percebe o sujeito passar de agente a trabalho?'],
  ['VI','Movimento dos componentes: caso histérica','{S1}, {S2} e {a} percorrem lugares diferentes conforme o estado.','{S1}: agente → trabalho → produção → verdade. {S2}: outro → produção → verdade → agente. {a}: produção → verdade → agente → outro. Em cada passo o texto liga a posição à clínica.','Acompanhe {a} na Roda: onde ele vira desejo de analista?'],
@@ -719,7 +719,7 @@ const VIGN = [
  pistas:['Os mestres (os médicos) falharam em saber. O sintoma é uma pergunta dirigida a um saber que se supõe.','O desejo aparece de través: o {a} como verdade barrada, ligado ao olhar do chefe e a uma rivalidade — ainda não dita.','Aqui {$} é agente e interpela um mestre ({S1}) para que produza saber ({S2}). É a histerização.'],
  steps:[
   {q:'Qual é a melhor hipótese de trabalho para o estado do inconsciente?',falaAt:0,
-   o:['Histérica (M)','Obsessivo (M_obs)','Capitalista (M_cap)','Imaginarização do real (M_ir)'],
+   o:['Histérica (M)','Obsessivo (M_obs)','Capitalista (M_cap)','Imaginarização do real (M_imgr)'],
    fb:['Isso. A fala é uma pergunta endereçada a um mestre: o sujeito histeriza, e o enigma sustenta o sintoma.','Não há certezas, rituais nem mandatos. Aqui há pergunta, não certeza.','Não aparece identificação pelo ter nem demanda de “mais”.','Não há relato de alucinação nem de estranheza no real; o sintoma está ligado a uma pergunta.'],c:0},
   {q:'Que intervenção ocupa o lugar do analista neste estado?',falaAt:0,
    o:['“Pelo que a senhora descreve, parece ansiedade. Vou lhe explicar o que fazer.”','“A senhora diz que eu deveria saber. E o que acontece no peito quando o chefe elogia a outra?”','“Vamos investigar sua infância. Conte tudo desde o começo.”'],
@@ -737,7 +737,7 @@ const VIGN = [
  pistas:['Certeza, não dúvida: a fala não faz pergunta a um mestre; traz um enunciado fechado.','Defesa diante do Outro feroz: a responsabilidade pesa sobre o sujeito, e o outro corre perigo se o mandato for descumprido.','O mandato numérico: {S2} agente simbólico. O recalque no simbólico retorna no simbólico.','Pensamento invasivo e sem sentido: o trabalho do imaginário ({S1}) produz gozo do sem sentido.'],
  steps:[
   {q:'Qual é a melhor hipótese de trabalho para o estado do inconsciente?',falaAt:0,
-   o:['Obsessivo (M_obs)','Histérica (M)','a-viciado (M_a-v)','Capitalista (M_cap)'],
+   o:['Obsessivo (M_obs)','Histérica (M)','a-viciado (M_av)','Capitalista (M_cap)'],
    fb:['Isso. Certezas, ritual e mandato: o recalque está no simbólico ({S2} agente) e o imaginário trabalha produzindo o sem sentido.','Falta a pergunta ao mestre. Rafael traz certeza, e não dúvida.','Há repetição, mas não um objeto irresistível como agente nem álibis a serviço dele.','Não há identificação pelo ter; a organização é o mandato.'],c:0},
   {q:'Que intervenção é mais alinhada a este estado?',falaAt:0,
    o:['“Fique tranquilo: o gás está fechado. Respire e confie.”','“Sete. E quem foi que contou que seis não vale?”','“O senhor duvida de si mesmo. O que o senhor realmente quer?”'],
@@ -752,10 +752,10 @@ const VIGN = [
 {id:'v3',st:'av',titulo:'“Só pra relaxar”',pac:'Diego, 24 anos, atendente de loja',bloom:[3,4,5],
  ctx:'Encaminhado pela irmã. Diz que “não vem falar de nada sério”.',
  falas:['“Eu sou [[0|viciado em apostas no celular]]; todo mundo me chama de [[0|“o viciado”]]. Mas é [[1|só pra relaxar depois do trabalho, todo mundo faz]], e às vezes eu ganho. [[2|Sem o celular eu não sei o que fazer com a noite. Não consigo viver sem isso.]]”'],
- pistas:['“O viciado” é a nomeação, {S1}: um neologismo do nome próprio. O sujeito se apresenta pelo objeto.','Justificativa, álibi: {S2} na produção da fala. O analista o recebe na verdade e o desconstrói.','Identificação objetal por complementaridade: o objeto {a} no lugar do outro (H_a-v).'],
+ pistas:['“O viciado” é a nomeação, {S1}: um neologismo do nome próprio. O sujeito se apresenta pelo objeto.','Justificativa, álibi: {S2} na produção da fala. O analista o recebe na verdade e o desconstrói.','Identificação objetal por complementaridade: o objeto {a} no lugar do outro (H_av).'],
  steps:[
   {q:'Qual é a melhor hipótese de trabalho para o estado do inconsciente?',falaAt:0,
-   o:['a-viciado (M_a-v)','Histérica (M)','Capitalista (M_cap)','Realização do imaginário (M_JA)'],
+   o:['a-viciado (M_av)','Histérica (M)','Capitalista (M_cap)','Realização do imaginário (M_rimg)'],
    fb:['Isso. O objeto age; {S2} produz álibis; produz-se o nome “viciado”.','Não há pergunta endereçada ao mestre.','Não é o ter que identifica, mas o objeto que nomeia.','Quase: o objeto também é agente no JA. Aqui o trabalho é dos álibis ({S2}) e a produção é o nome “viciado”; no JA o trabalho é do imaginário/corpo e a produção é o gozo do Outro.'],c:0},
   {q:'Que intervenção é mais alinhada a este estado?',falaAt:0,
    o:['“Você precisa desinstalar o aplicativo hoje mesmo.”','“Relaxar de quê, exatamente? E o que você faz naquela hora em que só o celular resolve?”','“Vamos combinar quantas horas por dia você pode usar o celular.”'],
@@ -763,8 +763,8 @@ const VIGN = [
    fb:['Ordem: discurso do mestre. Fecha o álibi em vez de escutá-lo na verdade.','Recebe o álibi na verdade e o desfaz sem julgar; ao mesmo tempo, faz a falta aparecer — o que há “naquela hora”?','Manejo comportamental pode ter valor, mas não é ato analítico: não convoca à perda do objeto nem toca o nome “viciado”.']}
  ],
  modelo:'“Relaxar de quê, exatamente? E o que você faz naquela hora em que só o celular resolve?”',
- porque:'Em A_a-v, {S1} no agente convoca {$} ao trabalho; o álibi ({S2}) é recebido na verdade e desconstruído.',
- u:'Efeito esperado (U_a-v): {S2} desfalca a própria bateria de álibis; o objeto vai à verdade libertadora (escolha e dependência); “viciado” desce a um outro. Penso e não sou.',
+ porque:'Em A_av, {S1} no agente convoca {$} ao trabalho; o álibi ({S2}) é recebido na verdade e desconstruído.',
+ u:'Efeito esperado (U_av): {S2} desfalca a própria bateria de álibis; o objeto vai à verdade libertadora (escolha e dependência); “viciado” desce a um outro. Penso e não sou.',
  crit:['Recebe o álibi em vez de rebatê-lo.','Não ordena nem aconselha.','Faz a falta aparecer (o que o objeto tampona).','Não confirma o nome “viciado” como identidade.']},
 
 {id:'v4',st:'cap',titulo:'“Se eu perder mais um”',pac:'Helena, 42 anos, empresária',bloom:[3,4,5],
@@ -773,7 +773,7 @@ const VIGN = [
  pistas:['Neologismos do nome próprio: {S1} faz as vezes de identidade. Trata-se de ter.','A nomeação como verdade de engano: sem ela, o sujeito não se reconhece.','Demanda de mais: {S2} no trabalho. A produção {a} é sempre insatisfatória, na caução da segurança.'],
  steps:[
   {q:'Qual é a melhor hipótese de trabalho para o estado do inconsciente?',falaAt:0,
-   o:['Capitalista (M_cap)','Obsessivo (M_obs)','Histérica (M)','a-viciado (M_a-v)'],
+   o:['Capitalista (M_cap)','Obsessivo (M_obs)','Histérica (M)','a-viciado (M_av)'],
    fb:['Isso. Identificação pela posse (provedora, eficiente) e demanda de mais: {S2} agente, objetos {a} no trabalho, {S1} produzido.','Há repetição de “mais”, mas o que organiza a fala é o ter, não um mandato recalcado no simbólico.','Não há pergunta ao mestre; há afirmação de identidade.','O objeto não é agente irresistível; os objetos são substituíveis: mais um contrato, outra casa.'],c:0},
   {q:'Que intervenção é mais alinhada a este estado?',falaAt:0,
    o:['“Que trimestre excelente! A senhora deveria se orgulhar mais.”','“Se perde mais um… ‘quem eu sou?’ E se ‘provedora’ não fosse o seu nome, o que ficaria?”','“Talvez a senhora deva trabalhar menos e descansar.”'],
@@ -791,7 +791,7 @@ const VIGN = [
  pistas:['A voz como objeto {a} no agente: age no imaginário (corpo) e produz o terror.','Imperativo do Outro ({S2}): o gozo do Outro, desejo invasivo barrado ao sujeito.','História contada pela família e repetida: realização do fantasma materno ({S2}).','Terror diante do objeto: angústia-corpo.','{S1}: rótulo que faz as vezes de nome, uma identificação rotular por falta de representante imaginário genuíno.'],
  steps:[
   {q:'Qual é a melhor hipótese de trabalho para o estado do inconsciente?',falaAt:0,
-   o:['Realização do imaginário (M_JA)','Obsessivo (M_obs)','Histérica (M)','Capitalista (M_cap)'],
+   o:['Realização do imaginário (M_rimg)','Obsessivo (M_obs)','Histérica (M)','Capitalista (M_cap)'],
    fb:['Isso. Voz como objeto agente, terror no corpo, gozo do Outro e o rótulo como identificação.','Não há mandato numérico; a voz é do Outro e invade.','Não há pergunta ao mestre; há imperativo e terror.','Não é o ter que identifica; é o objeto que age no corpo.'],c:0},
   {q:'Que intervenção é mais alinhada a este estado?',falaAt:0,
    o:['“Vamos nos concentrar em fazer você comer as três refeições.”','“Você diz ‘a voz da tia’. De quem é essa voz? E quando ela diz ‘não vai estragar’, o que ela quer de você?”','“Você não é só anoréxica. Tente pensar positivo sobre o seu corpo.”'],
@@ -799,8 +799,8 @@ const VIGN = [
    fb:['Toma o objeto como alvo e pode reforçar o seu poder. O manejo da alimentação pertence à equipe de saúde; a análise pergunta pelo Outro.','Desvela o gozo do Outro (o que a voz quer), com {S2} em suplência simbólica; convoca o sujeito a deixar cair o objeto voz.','Palavra de ânimo: não toca o gozo do Outro e mantém o analista no lugar do mestre.']}
  ],
  modelo:'“Você diz ‘a voz da tia’. De quem é essa voz? E quando ela diz ‘não vai estragar’, o que ela quer de você?”',
- porque:'Em A_JA o analista ocupa o agente com {S2} (suplência simbólica) e denuncia o desejo invasivo do Outro, para que o objeto seja deposto e des-erotizado.',
- u:'Efeito esperado (U_JA): o objeto cai como produto, gradativamente; {S1} agente interroga o gozo do Outro; sujeito advertido (não todo).',
+ porque:'Em A_rimg o analista ocupa o agente com {S2} (suplência simbólica) e denuncia o desejo invasivo do Outro, para que o objeto seja deposto e des-erotizado.',
+ u:'Efeito esperado (U_rimg): o objeto cai como produto, gradativamente; {S1} agente interroga o gozo do Outro; sujeito advertido (não todo).',
  crit:['Pergunta pela voz e pelo Outro, não pelo alimento.','Não aconselha nem anima.','Toca o rótulo sem confirmá-lo.','Convoca o sujeito ao trabalho de depor o objeto.']},
 
 {id:'v6',st:'ir',titulo:'“O terno cinza”',pac:'Otávio, 31 anos, técnico de som',bloom:[4,5],
@@ -809,7 +809,7 @@ const VIGN = [
  pistas:['O objeto {a} se materializa no real (olhar): é o produto do relato — o que se viu.','Estranheza e angústia: fracasso na dialética significante e demanda de sentido.','Um traço (o terno cinza) que remete a alguém: caminho até o significante mestre {S1} a que a alucinação responde.'],
  steps:[
   {q:'Qual é a melhor hipótese de trabalho para o estado do inconsciente?',falaAt:0,
-   o:['Imaginarização do real (M_ir)','Histérica (M)','a-viciado (M_a-v)','Obsessivo (M_obs)'],
+   o:['Imaginarização do real (M_imgr)','Histérica (M)','a-viciado (M_av)','Obsessivo (M_obs)'],
    fb:['Isso. O objeto aparece na materialidade do real; o relato é o produto; o trabalho é da estranheza e do sentido.','Não há pergunta endereçada a um mestre; há um objeto que se impõe ao olhar.','Nenhum objeto é buscado; ele irrompe.','Não há mandato nem certeza recalcada no simbólico.'],c:0},
   {q:'Que intervenção é mais alinhada a este estado?',falaAt:0,
    o:['“Isso não existe, é coisa da sua cabeça.”','“Fale mais desse terno cinza. A quem ele te faz pensar? E desde quando ele aparece?”','“Vou pedir uma avaliação psiquiátrica e, por ora, vamos esperar.”'],
@@ -817,8 +817,8 @@ const VIGN = [
    fb:['Negar o relato interrompe o trabalho de sentido e faz do analista um mestre que sabe o que é real.','Segue o traço que “lembra alguém” em busca do significante mestre que a imagem responde; o analista suplementa o simbólico para um passe de sentido.','A avaliação médica pode ser necessária e merece ser pensada em conjunto; mas, sozinha, não faz o passe de sentido — a escuta do traço continua.']}
  ],
  modelo:'“Fale mais desse terno cinza. A quem ele te faz pensar? E desde quando ele aparece?”',
- porque:'Em A_ir, {S2} no agente supre o simbólico: o analista busca o significante mestre a que a alucinação responde, para que haja passe de sentido.',
- u:'Efeito esperado (U_ir): {a} reconhecido como agente ilusório no passe de sentido; {S2} como verdade do outro; o sentido do delírio contribui para sua interrupção.',
+ porque:'Em A_imgr, {S2} no agente supre o simbólico: o analista busca o significante mestre a que a alucinação responde, para que haja passe de sentido.',
+ u:'Efeito esperado (U_imgr): {a} reconhecido como agente ilusório no passe de sentido; {S2} como verdade do outro; o sentido do delírio contribui para sua interrupção.',
  crit:['Não nega nem confirma a visão.','Segue o traço (“terno cinza”) e a história.','Busca o significante mestre, não a “explicação”.','Considera a avaliação médica sem abandonar a escuta.']},
 
 {id:'v7',st:'hist',titulo:'A sessão que muda de estado',pac:'Bruna, 33 anos, professora',bloom:[4,5],
@@ -827,10 +827,10 @@ const VIGN = [
  pistas:['Pergunta endereçada a um mestre: histerização. {$} agente.','Certeza, regra, repetição: agora o agente é {S2} simbólico, com o mandato (“tem que ser assim”).','Responsabilidade e culpa: defesa do outro diante do Outro feroz, marca do obsessivo.'],
  steps:[
   {q:'No início da sessão, qual estado sustenta a fala?',falaAt:0,show:{s:'hist',d:'M'},
-   o:['Histérica (M)','Obsessivo (M_obs)','Capitalista (M_cap)','a-viciado (M_a-v)'],
+   o:['Histérica (M)','Obsessivo (M_obs)','Capitalista (M_cap)','a-viciado (M_av)'],
    fb:['Isso: pergunta ao mestre, enigma.','Ainda não: falta certeza e mandato.','Não aparece o ter.','Nenhum objeto agente.'],c:0},
   {q:'Depois da virada, qual arranjo parece sustentar a fala?',falaAt:1,show:{s:'obs',d:'M'},
-   o:['Continua histérica (M)','Passou a um arranjo obsessivo (M_obs)','Passou ao capitalista (M_cap)','Passou à imaginarização do real (M_ir)'],
+   o:['Continua histérica (M)','Passou a um arranjo obsessivo (M_obs)','Passou ao capitalista (M_cap)','Passou à imaginarização do real (M_imgr)'],
    fb:['Não: a fala deixou de ser pergunta e virou certeza.','Isso: certeza, regra e culpa. O estado do inconsciente mudou dentro da mesma sessão — o inconsciente é dinâmico.','Não há identificação pelo ter.','Não há relato de aparição no real.'],c:1},
   {q:'O que o analista faz agora?',falaAt:1,show:{s:'obs',d:'A'},
    o:['Segue com a mesma manobra (“o que eu poderia saber?”), pois o caso é de histeria','Reavalia o lugar em que a fala está (regressão ao novo estado) e recolhe o mandato como enigma','Anuncia à paciente: “você mudou de diagnóstico”'],
@@ -983,8 +983,8 @@ V2('av', 'A', {t:'“Amanhã eu paro”', p:'Jonas, 31 anos, atendente', x:'Oita
    ['Dá um plano e um mestre: atende ao álibi como tratamento e mantém a alienação ao objeto.', 'Recebe o álibi e o devolve como enunciado; não julga nem propõe meta, e convoca a uma perda relativa ao objeto.', 'Abre um horizonte, mas sem passar pelo álibi que sustenta o objeto; pode virar fantasia de abstinência.']],
   ['el', 0, 'O {S1}: o analista, com sua palavra no agente, recebe o álibi ({S2}) na verdade e o desconstrói.']],
  m:'“Amanhã. Quantos amanhãs já couberam nesta semana?”',
- w:'Em A_a-v, {S1} no agente acolhe o álibi ({S2}) na verdade e convoca {$} a uma perda; o objeto passa à produção (queda).',
- u:'Em U_a-v, {S2} passa a agente e desfalca a bateria de álibis.',
+ w:'Em A_av, {S1} no agente acolhe o álibi ({S2}) na verdade e convoca {$} a uma perda; o objeto passa à produção (queda).',
+ u:'Em U_av, {S2} passa a agente e desfalca a bateria de álibis.',
  c:['Não estabelece meta nem promete resultado.', 'Retoma o álibi como enunciado.', 'Evita julgar o objeto ou a pessoa.']}),
 
 V2('av', 'U', {t:'“Não sei o que fui”', p:'Fernanda, 40 anos, corretora', x:'Duas semanas depois de uma intervenção que devolveu o “só hoje”.',
@@ -1055,7 +1055,7 @@ V2('ja', 'H', {t:'“O anoréxico da família”', p:'Igor, 30 anos, motorista',
  s:[['st', 'Rótulo identificatório, objeto invasivo e história do Outro: realização do imaginário (JA).', 'Regredindo a fala ao inconsciente: que estado ela indica?'], ['el', 2, 'O objeto: a fala trabalha a relação com esse parceiro indesejável.'], ['el', 3, 'O rótulo (“o anoréxico da família”): {S1} imaginário produzido por falta de representante genuíno.']],
  m:'“Essa coisa que manda em você. A família diz que é herança.”',
  w:'Retoma a palavra “manda” e a fala da mãe, deixando à vista o gozo do Outro (verdade barrada, {S2}) sem denunciar por ele.',
- u:'Em A_JA o analista ocupa {S2}, suplência simbólica que desvela o gozo do Outro e convoca o sujeito a trabalhar nas iterações que depõem o objeto.',
+ u:'Em A_rimg o analista ocupa {S2}, suplência simbólica que desvela o gozo do Outro e convoca o sujeito a trabalhar nas iterações que depõem o objeto.',
  c:['Retoma “manda” e a fala da mãe.', 'Não disputa o rótulo (“você não é anoréxico”).', 'Não impõe o prato.']}),
 
 V2('ja', 'A', {t:'“De quem é a frase?”', p:'Yasmin, 22 anos, estudante', x:'Nona sessão, com acompanhamento de equipe em paralelo.',
@@ -1066,7 +1066,7 @@ V2('ja', 'A', {t:'“De quem é a frase?”', p:'Yasmin, 22 anos, estudante', x:
   ['el', 0, 'O {S2}: suplência simbólica que desvela o gozo e denuncia o desejo invasivo do Outro.']],
  m:'“Você tem que se controlar. Essa frase, quem disse a primeira vez?”',
  w:'O analista lê a frase como enunciado do Outro: convoca {$} ao trabalho e visa à queda gradativa do objeto.',
- u:'Em U_JA, {S1} pode passar a agente, interrogando o gozo do Outro; sujeito advertido (não todo).',
+ u:'Em U_rimg, {S1} pode passar a agente, interrogando o gozo do Outro; sujeito advertido (não todo).',
  c:['Não dá contra-ordem.', 'Toma a frase como enunciado do Outro.', 'Trabalha em conjunto com o cuidado da equipe.']}),
 
 V2('ja', 'U', {t:'“Quem disse isso primeiro?”', p:'Vitor, 28 anos, técnico de informática', x:'Semanas depois de intervenções sobre a voz de comando.',
@@ -1077,7 +1077,7 @@ V2('ja', 'U', {t:'“Quem disse isso primeiro?”', p:'Vitor, 28 anos, técnico 
    ['Declara alta cedo demais: a queda do objeto é gradativa e iterativa.', 'Sustenta a pergunta como dele e o efeito sem celebrar; mantém o trabalho de des-erotização.', 'Tem razão quanto à iteração, mas antecipa o pior e pode recolocar o objeto como ameaça.']]],
  m:'“Quem disse isso primeiro. E o prato dividido, só percebeu depois.”',
  w:'A queda do objeto é gradativa: o efeito é sustentado, sem alta nem alarme, e o cuidado em equipe segue.',
- u:'Nova iteração de M_JA: o objeto pode voltar com outra roupa; o algoritmo continua.',
+ u:'Nova iteração de M_rimg: o objeto pode voltar com outra roupa; o algoritmo continua.',
  c:['Não declara cura.', 'Retoma a pergunta dele.', 'Mantém o cuidado em equipe.']}),
 
 /* ---------- IMAGINARIZAÇÃO DO REAL (inibição do real) ---------- */
@@ -1096,7 +1096,7 @@ V2('ir', 'H', {t:'“O que eu vi”', p:'Nelson, 51 anos, vigilante', x:'Quinta 
  s:[['st', 'Relato do que viu e ouviu, estranheza e demanda de sentido: imaginarização do real.', 'Regredindo a fala ao inconsciente: que estado ela indica?'], ['el', 2, 'O significante mestre é questionado na estranheza: a fala trabalha {S1}, “o que quer me falar”.'], ['el', 3, 'O relato do que viu e ouviu: o objeto (voz, olhar) é o produto da fala.']],
  m:'“Uma voz disse o seu nome. E o senhor não entendeu a língua.”',
  w:'Sustenta o relato como dele e recolhe a palavra “língua”, apontando o lugar do sentido, sem aderir nem desmentir.',
- u:'Em A_ir, o analista ocupa {S2} em suplência do simbólico; o objeto passa à verdade, para ser reconhecido.',
+ u:'Em A_imgr, o analista ocupa {S2} em suplência do simbólico; o objeto passa à verdade, para ser reconhecido.',
  c:['Não confirma nem desmente o que ele viu.', 'Retoma o “nome” e a “língua”.', 'Não interpreta o sentido por ele.']}),
 
 V2('ir', 'A', {t:'“Quem chamava assim?”', p:'Rosa, 47 anos, costureira', x:'Oitava sessão, com cuidado em equipe.',
@@ -1107,7 +1107,7 @@ V2('ir', 'A', {t:'“Quem chamava assim?”', p:'Rosa, 47 anos, costureira', x:'
   ['el', 0, 'O {S2}: suplência do simbólico para que advenha o sentido (ou o não sentido) que o imaginário deu.']],
  m:'“Rosinha. Quem chamava a senhora assim?”',
  w:'A partir do histórico da paciente, o analista toma o lugar de agente em suplência do simbólico, buscando o significante mestre a que a voz responde.',
- u:'Em U_ir, o objeto ({a}) passa a agente ilusório reconhecido, com passe de sentido.',
+ u:'Em U_imgr, o objeto ({a}) passa a agente ilusório reconhecido, com passe de sentido.',
  c:['Não nega nem confirma a voz.', 'Toma “Rosinha” como significante com história.', 'Mantém o cuidado em equipe.']}),
 
 V2('ir', 'U', {t:'“A voz do avô”', p:'Fábio, 33 anos, entregador', x:'Após várias sessões sobre um nome que a voz repetia.',
@@ -1118,7 +1118,7 @@ V2('ir', 'U', {t:'“A voz do avô”', p:'Fábio, 33 anos, entregador', x:'Apó
    ['Interrompe cedo: o passe de sentido reduz o delírio, mas o cuidado em equipe segue.', 'Sustenta o sentido que ele encontrou e o desejo de saber, sem completá-lo.', 'Endossa a interpretação sobrenatural e devolve o objeto ao real: fecha o sentido em nova certeza.']]],
  m:'“Ele o chamava assim antes de morrer. E o senhor quer saber como ele era.”',
  w:'O passe de sentido reduz a cadeia delirante; sustentar o desejo de saber preserva a nova divisão.',
- u:'Nova iteração: M_ir reabre com menos força do imaginário no real; a equipe acompanha.',
+ u:'Nova iteração: M_imgr reabre com menos força do imaginário no real; a equipe acompanha.',
  c:['Não interrompe o acompanhamento cedo demais.', 'Não endossa nem desmente a interpretação sobrenatural.', 'Sustenta o desejo de saber.']})
 ];
 /* junta ao conjunto principal: os 7 casos completos (sem d) + as 24 cenas por discurso */
@@ -1136,6 +1136,12 @@ g('Inconsciente', 'Base', 'Saber que trabalha sem que o sujeito o saiba; para La
 g('Significante', 'Base', 'Elemento da linguagem que vale pela diferença em relação a outros e que representa o sujeito para outro significante.',
   'Não carrega um sentido fixo: ganha valor na cadeia. É com significantes que o inconsciente trabalha. Os matemas {S1} e {S2} escrevem duas funções do significante: a que comanda (mestre) e a que forma o saber.',
   {a:'Como uma peça de xadrez: só vale pela posição em relação às outras.', r:['S₁ · significante mestre', 'S₂ · saber', 'Sujeito dividido ($)'], k:'significante'}),
+g('Enunciado', 'Base', 'O que é dito: a frase, a queixa, o conteúdo manifesto da fala.',
+  'É o que se poderia gravar e transcrever — a informação, o pedido, a demanda em suas palavras. No matema, o enunciado está mais próximo da linha de cima (agente → outro): o que se dirige a alguém. Lacan distingue o enunciado da enunciação no Seminário 17 (capítulo II), ao insistir nessa diferença de nível entre o dizer e o dito para dar sentido à função do enigma no discurso do analista.',
+  {a:'É a letra da carta: o que está escrito nela, palavra por palavra.', e:'“Não durmo direito há semanas” é um enunciado: um conteúdo que se repete do mesmo jeito, não importa quem escute.', r:['Enunciação', 'Lugar do agente (ignorância)', 'Significante'], go:'fund'}),
+g('Enunciação', 'Base', 'De onde se fala: a posição subjetiva que sustenta o dito, sem nenhuma frase esgotá-la.',
+  'É o registro que, no matema, corresponde à linha de baixo (produção → verdade), marcada pela impotência: a verdade nunca se diz por inteiro — “não se pode dizer toda a verdade”. Por isso a mesma frase muda de sentido clínico conforme o lugar do discurso de onde é dita: escutar a enunciação é escutar não apenas o que o analisando diz, mas de que posição ele o diz. É o que orienta a regressão da fala (H) ao estado do inconsciente (M): buscar o lugar que sustenta o dito.',
+  {a:'É o tom de voz e a ocasião da carta: por que essa pessoa escreveu isso, agora, para você.', e:'“Não durmo direito” pode vir do lugar da histérica que interpela um mestre para que ele saiba, do obsessivo que se justifica com certezas, ou do a-viciado que fala do objeto que não larga: mesmo enunciado, enunciações diferentes.', r:['Enunciado', 'Verdade (preguiça)', 'Impotência', 'Regressão'], go:'fund'}),
 g('Matema', 'Base', 'Escrita formal, sem palavras, das relações da estrutura.',
   'Lacan criou os matemas para transmitir a psicanálise sem o peso das metáforas: letras e lugares que podem ser manipulados como uma álgebra. Os quatro discursos são matemas: quatro lugares e quatro termos, com setas entre eles.',
   {a:'Uma partitura: não é a música, mas permite tocá-la do mesmo modo em qualquer lugar.', r:['Discurso', 'Lugar do agente (ignorância)'], go:'fund', m:['hist', 'M']}),
@@ -1155,7 +1161,7 @@ g('Gozo', 'Base', 'Satisfação paradoxal que excede o prazer e pode ser sofrime
   'É o que o sujeito obtém, muitas vezes sem saber e a caro custo, na repetição do sintoma. O mais-de-gozar é o resto desse gozo produzido pelo trabalho do saber; o gozo do Outro é o gozo sofrido como vindo do Outro (JA).',
   {a:'O alívio que dói: o coçar que machuca e não para.', r:['Mais-de-gozar', 'Gozo do Outro (JA)', 'Sintoma']}),
 g('Real', 'Base', 'O que escapa à palavra e à imagem e retorna como encontro sem sentido.',
-  'Um dos três registros (RSI). É o que irrompe pelo mau encontro (tiquê). No estado M_ir, o real “funciona mal”: voz ou olhar invadem sem sentido; no capitalista, o real destaca objetos e, após o ato, toma o lugar de agente (subjetivação na falta).',
+  'Um dos três registros (RSI). É o que irrompe pelo mau encontro (tiquê). No estado M_imgr, o real “funciona mal”: voz ou olhar invadem sem sentido; no capitalista, o real destaca objetos e, após o ato, toma o lugar de agente (subjetivação na falta).',
   {r:['Simbólico', 'Imaginário', 'Automaton e tiquê', 'Imaginarização do real']}),
 g('Simbólico', 'Base', 'A ordem dos significantes, das leis e dos nomes.',
   'É o registro da linguagem. No obsessivo, o recalque se dá no simbólico e retorna no simbólico (mandatos, rituais, números). A suplência simbólica do analista é a operação que devolve sentido ao que irrompeu no real ou no imaginário.',
@@ -1188,7 +1194,7 @@ g('Angústia', 'Base', 'Afeto que sinaliza a proximidade do real.',
   'No material aparece em duas formas: angústia-letra (realização do simbólico, no a-viciado) e angústia-corpo (realização do imaginário, terror, JA). Na imaginarização do real, o analisando pode sentir grande angústia diante da alucinação sem sentido.',
   {r:['Realização do imaginário (JA)', 'a-viciado (estado)', 'Letra']}),
 g('Inibição', 'Base', 'Detenção do funcionamento; aqui, o mau funcionamento do real (voz ou olhar).',
-  'É o nome do estado M_ir. O objeto voz ou olhar toma o lugar do trabalho e o imaginário passa a agir, produzindo o gozo do Outro (alucinação, perversão).',
+  'É o nome do estado M_imgr. O objeto voz ou olhar toma o lugar do trabalho e o imaginário passa a agir, produzindo o gozo do Outro (alucinação, perversão).',
   {r:['Imaginarização do real', 'Alucinação', 'Perversão']}),
 g('Falo (imaginário)', 'Base', 'Significante do desejo; imaginariamente, o que se tem ou se é para completar o Outro.',
   'No capitalista há deslocamento do falo imaginário que não negativa: “trata-se de ter!”. A identificação passa pela posse de objetos, e não pela falta que os faria circular.',
@@ -1313,10 +1319,10 @@ g('Capitalista (estado)', 'Estados', 'O inconsciente que possui: a posse no luga
   'Dupla torção do mestre. Produz neologismos do nome próprio, demanda de mais ou lamento de perda. O analista, com {S1}, oferece-se para ser rebaixado; o {a} na verdade pode ser esvaziado.',
   {r:['Discurso do Capitalista', 'Falo (imaginário)', 'Demanda'], go:'estados', m:['cap', 'M']}),
 g('Realização do imaginário (JA)', 'Estados', 'Angústia-corpo, terror: o objeto age e o imaginário produz o gozo do Outro.',
-  'Estado M_JA (Schejtman, lido por Moran), o “discurso da fenda”. Voz, olhar ou outro objeto invadem; identificação rotular (anoréxico, bulímico…); história repetida pela família. O analista, com {S2}, denuncia o desejo invasivo do Outro. Cuidado clínico em equipe.',
+  'Estado M_rimg (Schejtman, lido por Moran), o “discurso da fenda”. Voz, olhar ou outro objeto invadem; identificação rotular (anoréxico, bulímico…); história repetida pela família. O analista, com {S2}, denuncia o desejo invasivo do Outro. Cuidado clínico em equipe.',
   {r:['Gozo do Outro (JA)', 'Identificação rotular', 'Outro do Outro'], go:'estados', m:['ja', 'M']}),
 g('Imaginarização do real', 'Estados', 'Inibição do real: voz ou olhar se materializam e o imaginário age.',
-  'Estado M_ir: o mais-de-gozar passa ao trabalho e produz o gozo do Outro; alucinação visual ou verbal, delírio, perversão. O analista, em suplência do simbólico, busca o significante mestre a que a alucinação responde (passe de sentido).',
+  'Estado M_imgr: o mais-de-gozar passa ao trabalho e produz o gozo do Outro; alucinação visual ou verbal, delírio, perversão. O analista, em suplência do simbólico, busca o significante mestre a que a alucinação responde (passe de sentido).',
   {r:['Alucinação', 'Passe de sentido', 'Inibição'], go:'estados', m:['ir', 'M']}),
 
 /* ---------- CLÍNICA ---------- */
@@ -1372,7 +1378,7 @@ g('Delírio', 'Clínica', 'Cadeia de ideias que dá sentido ao que irrompeu; por
   'O texto lê a cadeia delirante como portadora de verdade na fala do analisando: cabe ao analista decifrar do lugar de agente. Formas citadas: delírio de mandatos, ciúme, erotomania.',
   {r:['Alucinação', 'Passe de sentido']}),
 g('Perversão', 'Clínica', 'Aqui, estrutura em que o outro serve ao gozo exigido pelo imaginário.',
-  'O texto a inclui na inibição do real (M_ir): a mesma estrutura serve à alucinação e à perversão, em que o objeto é o outro a serviço do gozo.',
+  'O texto a inclui na inibição do real (M_imgr): a mesma estrutura serve à alucinação e à perversão, em que o objeto é o outro a serviço do gozo.',
   {r:['Imaginarização do real', 'Inibição']}),
 g('Déjà-vu e jamais-vu', 'Clínica', 'Estranheza de já ter vivido a cena; ou de não reconhecer o que é familiar.',
   'Fenômenos que acompanham a alucinação visual na imaginarização do real: sinais de fracasso na dialética significante e ocasião de escuta cuidadosa.',
@@ -1424,6 +1430,8 @@ const CHIP = {
   a:'<span class="ch a">a</span>', '$':'<span class="ch sd"><span class="bs">S</span></span>'
 };
 const fmt = t => String(t).replace(/\{(S1|S2|a|\$)\}/g, (m, k) => CHIP[k]);
+/* subíndice do estado (av, cap, rimg, imgr…), pronto para colar depois de M/H/A/U em qualquer rótulo */
+const subTag = k => (ST[k] && ST[k].sub) ? `<sub>${ST[k].sub}</sub>` : '';
 const fmtOpt = o => ({'$':CHIP['$'],'a':CHIP.a,'S₁':CHIP.S1,'S₂':CHIP.S2}[o] || esc(o));
 function plain(t) {
   return String(t).replace(/\{S1\}/g,'S um').replace(/\{S2\}/g,'S dois').replace(/\{a\}/g,'objeto a').replace(/\{\$\}/g,'sujeito barrado')
@@ -1627,26 +1635,30 @@ function Rotor(root, opt = {}) {
       <p class="small" style="margin:8px 0 0;color:var(--ink2)"><b>Pergunta-guia:</b> ${DQ[i]}</p>`;
   }
   /* ----- roda dos quatro discursos ----- */
+  const P2 = a => [150 + 100 * Math.cos(a * Math.PI / 180), 150 + 100 * Math.sin(a * Math.PI / 180)];
   function buildWheel() {
     const w = q('wheel'); if (!w) return;
-    const P2 = a => [150 + 100 * Math.cos(a * Math.PI / 180), 150 + 100 * Math.sin(a * Math.PI / 180)];
     const arc = (a, b) => { const [x0, y0] = P2(a), [x1, y1] = P2(b); return `M${x0.toFixed(1)} ${y0.toFixed(1)} A100 100 0 0 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`; };
     let s = `<defs><marker id="wa${UID}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--ink2)"/></marker></defs><g data-r="ring">`;
     for (let i = 0; i < 4; i++) { const a = -90 + i * 90; s += `<path d="${arc(a + 30, a + 60)}" fill="none" stroke="var(--ink2)" stroke-width="1.8" marker-end="url(#wa${UID})"/>`; }
     DK.forEach((k, i) => {
       const [x, y] = P2(-90 + i * 90);
-      s += `<g class="node" data-i="${i}" transform="translate(${x.toFixed(1)},${y.toFixed(1)})" style="cursor:pointer" tabindex="0" role="button" aria-label="Ir ao discurso ${k}"><g class="up"><circle r="44"/><g transform="translate(-36,-16) scale(.36)">${matemaInner(SLOTS[R.s][k], {sz: 30})}</g><text class="nl" text-anchor="middle" y="-26">${k}${ST[R.s].sub ? '' : ''}</text></g></g>`;
+      s += `<g class="node" data-i="${i}" transform="translate(${x.toFixed(1)},${y.toFixed(1)})" style="cursor:pointer" tabindex="0" role="button" aria-label="Ir ao discurso ${k}"><g class="up"><circle r="44"/><g transform="translate(-36,-16) scale(.36)">${matemaInner(SLOTS[R.s][k], {sz: 30})}</g><text class="nl" text-anchor="middle" y="-26">${k}${ST[R.s].sub ? `<tspan font-size="9" dy="3">${ST[R.s].sub}</tspan>` : ''}</text></g></g>`;
     });
-    s += `</g><circle class="cursor" cx="150" cy="50" r="50"/>`;
+    s += `</g><circle class="cursor" data-r="cursor" cx="150" cy="50" r="50"/>`;
     w.innerHTML = s;
     $$('.node', w).forEach(nd => { const go = () => gotoIdx(+nd.dataset.i); nd.addEventListener('click', go); nd.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } }); });
     spinWheel(R.n);
   }
+  /* Os quatro lugares M (norte), H (leste), A (sul), U (oeste) ficam sempre fixos na roda;
+     apenas o destaque (o "elemento" em giro) se move de um lugar fixo ao outro. */
   function spinWheel(f) {
     const w = q('wheel'); if (!w) return;
-    const ring = $('[data-r="ring"]', w); if (!ring) return;
-    ring.setAttribute('transform', `rotate(${-f * 90} 150 150)`);
-    $$('.node', w).forEach(nd => { $('.up', nd).setAttribute('transform', `rotate(${f * 90})`); nd.classList.toggle('cur', +nd.dataset.i === ((Math.round(f) % 4) + 4) % 4); });
+    const cursor = $('[data-r="cursor"]', w); if (!cursor) return;
+    const ang = -90 + f * 90, [cx, cy] = P2(ang);
+    cursor.setAttribute('cx', cx.toFixed(1)); cursor.setAttribute('cy', cy.toFixed(1));
+    const cur = ((Math.round(f) % 4) + 4) % 4;
+    $$('.node', w).forEach(nd => nd.classList.toggle('cur', +nd.dataset.i === cur));
   }
   /* ----- eventos ----- */
   function onSym(el) {
@@ -1920,6 +1932,21 @@ const FUND = [
    const feed = $('[data-f]', box), seen = new Set();
    $$('[data-k]', box).forEach(b => b.onclick = () => { const k = b.dataset.k; seen.add(k); addBubble(feed, {kind:'teoria', who:`${k} · ${info[k][0]}`, html:info[k][1], max:3}); if (seen.size >= 4) ctx.ok(); });
  }},
+ {t:'Enunciação e enunciado', b:[2,3], run(box, ctx) {
+   const cards = [
+     {k:'do', t:'O enunciado', sub:'o que é dito', d:'É a frase, a queixa, o pedido — o conteúdo manifesto da fala, aquilo que se poderia gravar e transcrever. No matema, é o que mais se aproxima da linha de cima: agente → outro, a demanda que se dirige a alguém.', ex:'“Não durmo direito há semanas” é um enunciado: um conteúdo, uma informação.'},
+     {k:'cao', t:'A enunciação', sub:'de onde se fala', d:'É a posição, o lugar subjetivo a partir do qual algo é dito — e que nenhuma frase esgota. No matema, é o registro da linha de baixo: produção → verdade, marcada pela impotência (H e U), onde a verdade nunca se diz por inteiro: “não se pode dizer toda a verdade”.', ex:'A mesma frase “não durmo direito” muda de sentido clínico conforme quem a diz ocupa, no discurso, o lugar da histérica que interpela um mestre, do obsessivo que se justifica, ou do a-viciado que fala do objeto que não larga.'}];
+   box.innerHTML = `<p>Toda fala tem duas camadas. Lacan retoma essa diferença de nível entre <b>dizer</b> e <b>dito</b> no Seminário 17 (capítulo II), para dar sentido à função do enigma no discurso do analista.</p>
+   <div class="grid2" style="grid-template-columns:repeat(2,1fr)" data-cards>${cards.map(c => `<button type="button" class="card flat" data-k="${c.k}" style="cursor:pointer;text-align:left;padding:12px"><div class="eyebrow">${c.sub}</div><h3 style="font-size:1.05rem;margin:2px 0">${c.t}</h3><p class="small muted" style="margin:0">Toque para abrir</p></button>`).join('')}</div>
+   <div class="feed" data-f style="margin-top:12px"></div>
+   <div class="callout" style="margin-top:12px">Por isso o analista escuta menos <b>o que</b> é dito (o enunciado, o conteúdo da queixa) e mais <b>de onde</b> é dito (a enunciação, a posição no discurso). É o mesmo motivo pelo qual a regressão da fala (H) ao estado do inconsciente (M) importa: ela busca o lugar que sustenta o dito, não apenas o dito em si.</div>`;
+   const feed = $('[data-f]', box), seen = new Set();
+   $$('[data-k]', $('[data-cards]', box)).forEach(b => b.onclick = () => {
+     const c = cards.find(x => x.k === b.dataset.k); seen.add(c.k);
+     addBubble(feed, {kind:'teoria', who:c.t, html:`${c.d}<br><i>${c.ex}</i>`, max:3});
+     if (seen.size >= cards.length) ctx.ok();
+   });
+ }},
  {t:'O giro de um quarto de volta', b:[2,3], run(box, ctx) {
    box.innerHTML = `<p>Lacan gira o matema um quarto de volta e obtém o discurso seguinte. A regra é uma só: <b>cada termo avança um lugar</b>.</p>
    <div class="callout"><b>Agente → Outro → Produção → Verdade → Agente.</b> Mnemônico: “<b>A</b> <b>O</b>nda <b>P</b>assa <b>V</b>oando”.</div>
@@ -1992,7 +2019,7 @@ function quickQ(box, ids, onAll) {
 VIEW.fund = {
   build(el) {
     this.el = el; this.step = +P.fundStep || 0; this.done = FUND.map((_, i) => !!(P.fundDone && P.fundDone[i]));
-    el.innerHTML = head('Sequência didática · passo a passo', 'Fundamentos guiados', 'Oito passos curtos: explique, toque, responda. Você pode voltar quando quiser.') + `<div class="card"><div data-dots class="row" style="gap:6px;margin-bottom:12px"></div><div class="row" style="justify-content:space-between;align-items:flex-start"><div><div class="eyebrow" data-cnt></div><h3 data-t style="font-size:1.3rem;margin-top:2px"></h3></div><div data-tags class="row" style="gap:4px"></div></div><div data-box style="margin-top:12px"></div>
+    el.innerHTML = head('Sequência didática · passo a passo', 'Fundamentos guiados', 'Nove passos curtos: explique, toque, responda. Você pode voltar quando quiser.') + `<div class="card"><div data-dots class="row" style="gap:6px;margin-bottom:12px"></div><div class="row" style="justify-content:space-between;align-items:flex-start"><div><div class="eyebrow" data-cnt></div><h3 data-t style="font-size:1.3rem;margin-top:2px"></h3></div><div data-tags class="row" style="gap:4px"></div></div><div data-box style="margin-top:12px"></div>
     <div class="row" style="justify-content:space-between;margin-top:18px;border-top:1px solid var(--line);padding-top:14px"><button class="btn" data-prev type="button">${ico('prev')}Anterior</button><span class="small muted" data-status></span><button class="btn primary" data-next type="button">Próximo${ico('next')}</button></div></div>`;
     $('[data-prev]', el).onclick = () => this.show(this.step - 1);
     $('[data-next]', el).onclick = () => this.show(this.step + 1);
@@ -2068,12 +2095,19 @@ function Globe(cv, o) {
       if (k === G.sel) { line(pts, c, 4, 1, 1); } else line(pts, c, 2, .85, .3);
     }
     // nós do meridiano selecionado
-    const st = ST[G.sel], nodes = [[0, 'M', st.dn[0]], [Math.PI / 2, 'H', st.dn[1]], [Math.PI, 'A', st.dn[2]], [Math.PI * 1.5, 'U', st.dn[3]]];
-    ctx.font = '700 13px "Bricolage Grotesque",system-ui,sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    const st = ST[G.sel], sub = st.sub, R2 = sub ? 16 : 13;
+    const nodes = [[0, 'M', st.dn[0]], [Math.PI / 2, 'H', st.dn[1]], [Math.PI, 'A', st.dn[2]], [Math.PI * 1.5, 'U', st.dn[3]]];
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     for (const [t, L] of nodes) {
       const [x, y] = mer(PSI[G.sel], t), dx = x - S / 2, dy = y - (S / 2 + 6), d = Math.hypot(dx, dy) || 1;
-      ctx.beginPath(); ctx.arc(x, y, 13, 0, 7); ctx.fillStyle = css(COLV[G.sel]); ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = surf; ctx.stroke();
-      ctx.fillStyle = css('--surface'); ctx.fillText(L, x, y + .5);
+      ctx.beginPath(); ctx.arc(x, y, R2, 0, 7); ctx.fillStyle = css(COLV[G.sel]); ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = surf; ctx.stroke();
+      ctx.fillStyle = css('--surface');
+      if (sub) {
+        ctx.font = '700 12px "Bricolage Grotesque",system-ui,sans-serif'; ctx.fillText(L, x - 3, y - 1);
+        ctx.font = '700 8px "Bricolage Grotesque",system-ui,sans-serif'; ctx.fillText(sub, x + 6, y + 6);
+      } else {
+        ctx.font = '700 13px "Bricolage Grotesque",system-ui,sans-serif'; ctx.fillText(L, x, y + .5);
+      }
     }
     // polo norte: seis M
     const [nx, ny] = proj(0, 1, 0); ctx.font = '600 11px "Bricolage Grotesque",system-ui,sans-serif'; ctx.fillStyle = ink2; ctx.textAlign = 'center';
@@ -2139,7 +2173,7 @@ VIEW.estados = {
   ficha() {
     const k = this.sel, st = ST[k], box = $('[data-fi]', this.el);
     box.innerHTML = `<div class="row" style="justify-content:space-between;align-items:flex-start"><div><div class="eyebrow">${st.fonte}</div><h3 style="font-size:1.3rem">${st.nome}</h3><div class="muted" style="font-style:italic">${st.lema}</div></div><span class="tag">${k === 'hist' ? 'M' : 'M<sub>' + st.sub + '</sub>'}</span></div>
-     <div class="row" style="gap:8px;margin:12px 0" data-mini>${DK.map(d => `<div style="flex:1 1 70px;min-width:70px;text-align:center"><div class="eyebrow" style="font-size:.66rem">${d}</div>${matemaSVG(SLOTS[k][d])}</div>`).join('')}</div>
+     <div class="row" style="gap:8px;margin:12px 0" data-mini>${DK.map(d => `<div style="flex:1 1 70px;min-width:70px;text-align:center"><div class="eyebrow" style="font-size:.66rem">${d}${subTag(k)}</div>${matemaSVG(SLOTS[k][d])}</div>`).join('')}</div>
      <dl class="kv"><dt>Traço</dt><dd>${fmt(st.traco)}</dd><dt>Escuta</dt><dd>${fmt(st.escuta)}</dd><dt>Analista</dt><dd>${fmt(st.analista)}</dd><dt>Meta</dt><dd>${fmt(st.meta)}</dd></dl>
      <div class="callout warn small" style="margin-top:10px">${st.cuidado}</div>
      <div class="row" style="margin-top:12px"><button class="btn primary" type="button" data-open>${ico('rotate')}Girar na Roda</button><button class="btn speak" type="button" data-say>${ico('sound')}Ouvir a ficha</button></div>`;
@@ -2155,7 +2189,7 @@ VIEW.estados = {
        <div class="row" style="gap:10px;margin-bottom:8px"><label class="small"><b>Estado A</b><br><select id="cmpA" style="min-height:40px;border-radius:10px;padding:0 8px;background:var(--surface);border:1.5px solid var(--line)">${STK.map(k => `<option value="${k}" ${k === A ? 'selected' : ''}>${ST[k].short}</option>`).join('')}</select></label>
        <label class="small"><b>Estado B</b><br><select id="cmpB" style="min-height:40px;border-radius:10px;padding:0 8px;background:var(--surface);border:1.5px solid var(--line)">${STK.map(k => `<option value="${k}" ${k === B ? 'selected' : ''}>${ST[k].short}</option>`).join('')}</select></label>
        <div class="seg" style="margin-left:auto">${DK.map(d => `<button class="pill" type="button" data-d="${d}" aria-pressed="${d === D}">${d}</button>`).join('')}</div></div>
-       <div class="grid2" style="grid-template-columns:1fr 1fr;gap:10px"><div class="card flat" style="padding:8px"><div class="eyebrow" style="text-align:center">${ST[A].short} · ${D}</div>${matemaSVG(a, {diff: di, names: true})}</div><div class="card flat" style="padding:8px"><div class="eyebrow" style="text-align:center">${ST[B].short} · ${D}</div>${matemaSVG(b, {diff: di, names: true})}</div></div>
+       <div class="grid2" style="grid-template-columns:1fr 1fr;gap:10px"><div class="card flat" style="padding:8px"><div class="eyebrow" style="text-align:center">${ST[A].short} · ${D}${subTag(A)}</div>${matemaSVG(a, {diff: di, names: true})}</div><div class="card flat" style="padding:8px"><div class="eyebrow" style="text-align:center">${ST[B].short} · ${D}${subTag(B)}</div>${matemaSVG(b, {diff: di, names: true})}</div></div>
        <div class="bub teoria" style="margin-top:10px"><div class="who">O que mudou</div>${diffText(a, b)}</div>`;
       $('#cmpA', box).onchange = e => { A = e.target.value; bump(); draw(); }; $('#cmpB', box).onchange = e => { B = e.target.value; bump(); draw(); };
       $$('[data-d]', box).forEach(x => x.onclick = () => { D = x.dataset.d; bump(); draw(); });
@@ -2206,7 +2240,7 @@ VIEW.clinica = {
     const st = ST[v.st], L = v.d ? V2LBL[v.d] : null, grp = VIGN.filter(x => !!x.d === !!v.d);
     const falaHTML = t => esc(t).replace(/\[\[(\d+)\|(.+?)\]\]/g, '<button type="button" class="mark" data-k="$1">$2</button>');
     el.innerHTML = `<button class="btn sm" type="button" data-back>${ico('prev')}Todas as vinhetas</button>
-     <div class="pagehead" style="margin-top:12px"><div class="row" style="gap:6px">${v.bloom.map(bloomTag).join('')}<span class="tag">${v.d ? 'cena ' + v.d + ' · ' + st.short : 'vinheta fictícia'}</span></div><h2>${v.titulo}</h2><p><b>${v.pac}.</b> ${v.ctx}</p></div>
+     <div class="pagehead" style="margin-top:12px"><div class="row" style="gap:6px">${v.bloom.map(bloomTag).join('')}<span class="tag">${v.d ? 'cena ' + v.d + subTag(v.st) + ' · ' + st.short : 'vinheta fictícia'}</span></div><h2>${v.titulo}</h2><p><b>${v.pac}.</b> ${v.ctx}</p></div>
      <div class="grid2" style="align-items:start">
       <div class="stack">
        <div class="card"><div class="eyebrow">${L ? L.fala : 'A fala do analisando'}</div><div class="feed" data-falas style="margin-top:8px;gap:8px"></div>
@@ -2332,7 +2366,7 @@ function labMontar(box) {
       <div class="seg" data-d>${DK.map(x => `<button class="pill" type="button" data-x="${x}" aria-pressed="${x === d}">${x}</button>`).join('')}</div>
       <div class="seg" data-m><button class="pill" type="button" data-mm="zero" aria-pressed="${mode === 'zero'}">Do zero</button><button class="pill" type="button" data-mm="giro" aria-pressed="${mode === 'giro'}">Aplique o giro</button></div>
       <button class="btn sm" type="button" data-rnd>${ico('reset')}Sortear</button></div>
-     ${mode === 'giro' ? `<div class="callout small" style="margin-bottom:10px">Este é o discurso <b>${srcD}</b> de ${ST[st].short}. Aplique um quarto de volta para montar o <b>${d}</b>: cada termo avança um lugar (agente → outro → produção → verdade → agente).<div style="max-width:220px;margin:6px auto 0">${matemaSVG(SLOTS[st][srcD], {names: true})}</div></div>` : `<p class="small muted" style="margin:0 0 10px">Monte o discurso <b>${d}</b> (${DROLE[DK.indexOf(d)].toLowerCase()}) de <b>${ST[st].short}</b>. Toque numa ficha e depois num lugar, ou arraste.</p>`}
+     ${mode === 'giro' ? `<div class="callout small" style="margin-bottom:10px">Este é o discurso <b>${srcD}${subTag(st)}</b> de ${ST[st].short}. Aplique um quarto de volta para montar o <b>${d}${subTag(st)}</b>: cada termo avança um lugar (agente → outro → produção → verdade → agente).<div style="max-width:220px;margin:6px auto 0">${matemaSVG(SLOTS[st][srcD], {names: true})}</div></div>` : `<p class="small muted" style="margin:0 0 10px">Monte o discurso <b>${d}${subTag(st)}</b> (${DROLE[DK.indexOf(d)].toLowerCase()}) de <b>${ST[st].short}</b>. Toque numa ficha e depois num lugar, ou arraste.</p>`}
      <div class="slotgrid" data-g>${[0, 2, 1, 3].map(i => `<div class="slot" data-i="${i}" role="button" tabindex="0" aria-label="Lugar: ${PLACE[SLOTNAMES[i]].n}"><small>${PLACE[SLOTNAMES[i]].n}</small><span class="v"></span></div>`).join('')}</div>
      <div class="tray">${ELS.map(tokHTML).join('')}</div>
      <div class="row" style="justify-content:center"><button class="btn primary" type="button" data-chk>${ico('check')}Verificar</button><button class="btn" type="button" data-hint>${ico('hint')}Dica</button><button class="btn ghost" type="button" data-clr>Limpar</button></div>
@@ -2352,7 +2386,7 @@ function labMontar(box) {
     $('[data-chk]', box).onclick = () => {
       if (O.vals.some(v => !v)) { addBubble(fb, {kind: 'dica', who: 'Faltam fichas', html: 'Preencha os quatro lugares antes de verificar.', speak: false}); return; }
       let ok = 0; $$('.slot', box).forEach(s => { const i = +s.dataset.i, good = O.vals[i] === sl[i]; s.classList.add(good ? 'ok' : 'no'); if (good) ok++; });
-      if (ok === 4) { const c = count('montados'); addBubble(fb, {kind: 'ok', who: 'Perfeito', html: `Você montou ${d}${ST[st].sub ? '<sub>' + ST[st].sub + '</sub>' : ''}. ${STORY[st][DK.indexOf(d)]}`, speak: false}); if (c >= 3) mark('lab-montar', 'Laboratório: montar 3 matemas'); }
+      if (ok === 4) { const c = count('montados'); addBubble(fb, {kind: 'ok', who: 'Perfeito', html: `Você montou ${d}${subTag(st)}. ${STORY[st][DK.indexOf(d)]}`, speak: false}); if (c >= 3) mark('lab-montar', 'Laboratório: montar 3 matemas'); }
       else addBubble(fb, {kind: 'bad', who: `${ok} de 4`, html: mode === 'giro' ? 'Confira a regra do giro: cada termo avança um lugar. Use a dica se quiser.' : 'Os lugares em vermelho estão trocados. Use a dica ou revise a Roda.', speak: false});
     };
   };
@@ -2399,7 +2433,7 @@ function labCostura(box) {
      <div class="seg" data-st>${STK.map(k => `<button class="pill" type="button" data-k="${k}" aria-pressed="${k === st}">${ST[k].short}</button>`).join('')}</div>
      <div class="thread-scroll"><svg viewBox="0 0 340 340" style="width:100%;max-width:460px;display:block;margin:6px auto;height:auto" role="img" aria-label="Fios dos quatro termos através dos quatro discursos">
       ${['Agente', 'Outro', 'Produção', 'Verdade'].map((t, i) => `<text class="ptxt" x="${CX[i]}" y="18" text-anchor="middle">${t}</text>`).join('')}
-      ${['M', 'H', 'A', 'U', 'M'].map((t, i) => `<text class="ptxt" x="24" y="${RY[i] + 4}" text-anchor="middle" style="font-size:13px">${t}</text>`).join('')}
+      ${['M', 'H', 'A', 'U', 'M'].map((t, i) => `<text class="ptxt" x="24" y="${RY[i] + 4}" text-anchor="middle" style="font-size:13px">${t}${ST[st].sub ? `<tspan font-size="8" dy="2">${ST[st].sub}</tspan>` : ''}</text>`).join('')}
       <g data-th></g><g data-nd></g></svg></div>
      <div class="row" style="justify-content:center;gap:8px">${ELS.map(el => `<button class="btn sm" type="button" data-n="${esc(el)}">Passar o fio ${chipOf(el)}</button>`).join('')}<button class="btn sm primary" type="button" data-all>Costurar tudo</button><button class="btn sm ghost" type="button" data-clr>Limpar</button></div>
      <div class="feed" data-fb style="margin-top:10px"></div>`;
